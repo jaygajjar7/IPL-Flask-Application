@@ -31,5 +31,25 @@ pip install --upgrade pip [ this is optional]
 So after getting this done we have to install basic libraries
 
 ```bash
-pip install pandas #Pandas and sqlite3 can also be used to transfer between the CSV and SQL formats. 
-``` 
+pip install pandas #Pandas and sqlite3 can also be used to transfer between the CSV and SQL formats.
+pip install gunicorn
+```
+## Installed Packages 
+| Name|Version |
+|--|--|
+| click | 8.1.1 |
+| Flask | 2.1.1 |
+| gunicorn | 20.1.0 |
+| importlib-metadata | 4.11.3 |
+| itsdangerous | 2.1.2 |
+| Jinja2 | 3.1.1 |
+| MarkupSafe | 2.1.1 |
+| numpy | 1.22.3 |
+| pandas | 1.4.1 |
+| pip | 22.0.4 |
+| python-dateutil | 2.8.2 |
+| pytz | 2022.1 |
+| setuptools | 49.2.1 |
+| six | 1.16.0 |
+| Werkzeug | 2.1.0 |
+| zipp | 3.7.0 |
