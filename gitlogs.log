@@ -1,0 +1,57 @@
+commit f671fbd2c244f44e8ab25e03682d1ba539114f7f
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:44:42 2022 +0100
+
+    Requirement updated
+
+commit 6dc534887de0fbd2b34d084cb52e494e68990439
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:41:03 2022 +0100
+
+    Requirements updated
+
+commit aa65251e9cde867bfc747d9ecb2a7aa0f55e33f9
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:34:32 2022 +0100
+
+    Procfile Updated
+
+commit e39b40d7323d70b39471c61b30f64c6aa68ee582
+Merge: d13fcae dbbc803
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:24:16 2022 +0100
+
+    Merge branch 'dev'
+
+commit dbbc803712e149faeae9aa9ac1e1ee1a1062b63d
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:22:02 2022 +0100
+
+    Update proc file
+
+commit d13fcae42c0bb79622a7cdb7cb51530feff501e8
+Merge: 5678240 cca07c5
+Author: Jay Gajjar <gajjarjay007@gmail.com>
+Date:   Fri Apr 1 20:06:59 2022 +0100
+
+    Merge pull request #1 from jaygajjar7/dev
+    
+    Requirement file changes
+
+commit cca07c57ffc740088381b93a53a7fbb58317f259
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 20:03:34 2022 +0100
+
+    Requirement file changes
+
+commit 5678240acc3fbc6423c4dbebfad1d8f843b437f7
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 19:40:53 2022 +0100
+
+    heroku added
+
+commit 6001ae123e5047f068a457c36a4682b7fcf22a1c
+Author: Jay Gajjar <jaygajjar@Jays-MacBook-Pro.local>
+Date:   Fri Apr 1 14:30:22 2022 +0100
+
+    initial commit
