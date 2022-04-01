@@ -31,6 +31,7 @@ pip install --upgrade pip [ this is optional]
 So after getting this done we have to install basic libraries
 
 ```bash
+pip install Flask
 pip install pandas #Pandas and sqlite3 can also be used to transfer between the CSV and SQL formats.
 pip install gunicorn
 ```
