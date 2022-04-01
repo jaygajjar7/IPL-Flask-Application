@@ -1,0 +1,80 @@
+{% include 'header.html' %}
+    
+    </div>
+    
+    <!-- Top bar -->
+    <div class="top-bar">
+        <h1>Match Data</h1>
+        <p><a href="{{ url_for('hello') }}">Home</a> / Match Data</p>
+    </div>
+    <!-- end Top bar -->
+
+    <!-- Main container -->
+    <div class="clearfix">
+        
+        <div class="col-md-12">
+            <h3 class="text-center uppercase">{{singlematchdata[2]}} VS {{singlematchdata[3]}}</h3>
+            <h5 class="text-center">deliveries.csv is the ball-by-ball data of all the IPL matches including data of the batting team, batsman, bowler, non-striker, runs scored, etc.</h5>
+            <div class="h-30"></div>
+            <table id="matches" class="table table-bordered table-responsive" style="width:100%">
+                <thead>
+                  <tr>
+                    <th class="uppercase">Match Id</th>	
+                    <th class="uppercase">Inning</th>	
+                    <th class="uppercase">Batting Team</th>
+                    <th class="uppercase">Bowling Team</th>
+                    <th class="uppercase">over</th>
+                    <th class="uppercase">Ball</th>
+                    <th class="uppercase">Batsman</th>
+                    <th class="uppercase">Non Striker</th>
+                    <th class="uppercase">Bowler</th>
+                    <th class="uppercase">Is super over</th>
+                    <th class="uppercase">Wide Runs</th>
+                    <th class="uppercase">Bye Runs</th>
+                    <th class="uppercase">Legbye Runs</th>
+                    <th class="uppercase">Noball Runs</th>
+                    <th class="uppercase">Penalty Runs</th>
+                    <th class="uppercase">Batsman Runs</th>
+                    <th class="uppercase">Extra Runs</th>
+                    <th class="uppercase">Total Runs</th>
+                    <th class="uppercase">Player Dismissed</th>
+                    <th class="uppercase">Dismissal Kind</th>
+                    <th class="uppercase">Fielder</th>
+                    
+                </tr>
+                </thead>
+                <tbody>
+                    {% for row in particularmatchdata %}
+                        <tr>
+                            <td>{{row[0]}}</td>	
+                            <td>{{row[1]}}</td>
+                            <td>{{row[2]}}</td>
+                            <td>{{row[3]}}</td>
+                            <td>{{row[4]}}</td>
+                            <td>{{row[5]}}</td>
+                            <td>{{row[6]}}</td>
+                            <td>{{row[7]}}</td>
+                            <td>{{row[8]}}</td>
+                            <td>{{row[9]}}</td>
+                            <td>{{row[10]}}</td>
+                            <td>{{row[11]}}</td>
+                            <td>{{row[12]}}</td>
+                            <td>{{row[13]}}</td>
+                            <td>{{row[14]}}</td>
+                            <td>{{row[15]}}</td>
+                            <td>{{row[16]}}</td>
+                            <td>{{row[17]}}</td>
+                            <td>{{row[18]}}</td>
+                            <td>{{row[19]}}</td>
+                            <td>{{row[20]}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>            
+            <div class="h-10"></div>
+        
+        </div>
+    </div>
+    <!-- end Main container -->
+
+{% include 'footer.html' %}

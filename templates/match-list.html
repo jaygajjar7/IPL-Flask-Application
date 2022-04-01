@@ -1,0 +1,80 @@
+{% include 'header.html' %}
+
+</div>
+
+<!-- Top bar -->
+<div class="top-bar">
+    <h1>Match List</h1>
+    <p><a href="{{ url_for('hello') }}">Home</a> / Match List</p>
+</div>
+<!-- end Top bar -->
+
+<!-- Main container -->
+<div class="clearfix">
+
+    <div class="col-md-12">
+        <h3 class="text-center uppercase">Match List</h3>
+        <h5 class="text-center">matches.csv contains details related to the match such as location, contesting teams,
+            umpires, results, etc.</h5>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        <span>{{ message }}</span>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="h-30"></div>
+        <table id="matches" class="table table-bordered table-responsive" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="uppercase">ID</th>
+                    <th class="uppercase">Season</th>
+                    <th class="uppercase">Date</th>
+                    <th class="uppercase">Team1</th>
+                    <th class="uppercase">Team2</th>
+                    <th class="uppercase">Toss winner</th>
+                    <th class="uppercase">Toss decision</th>
+                    <th class="uppercase">Winner</th>
+                    <th class="uppercase">Win by runs</th>
+                    <th class="uppercase">Win by wickets</th>
+                    <th class="uppercase">Player of match</th>
+                    <th class="uppercase">Venue</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in matchlist %}
+                <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                    <td>{{row[5]}}</td>
+                    <td>{{row[6]}}</td>
+                    <td>{{row[7]}}</td>
+                    <td>{{row[10]}}</td>
+                    <td>{{row[11]}}</td>
+                    <td>{{row[12]}}</td>
+                    <td>{{row[13]}}</td>
+                    <td>{{row[14]}}</td>
+                    <td><a href="{{ url_for('viewmatchdata',id=row[0]) }}"><img
+                                src="{{ url_for('static',filename='img/view.png') }}" style="margin: 4px;" height="40px" width="40px"></a><a
+                            href="{{ url_for('removematch',id=row[0]) }}"><img
+                                src="{{ url_for('static',filename='img/remove.png') }}" style="margin: 4px;" height="40px" width="40px"></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="h-10"></div>
+
+    </div>
+</div>
+<!-- end Main container -->
+
+{% include 'footer.html' %}
