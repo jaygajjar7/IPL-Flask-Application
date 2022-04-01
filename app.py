@@ -39,8 +39,7 @@ def hello():
 
     deliveries = pd.read_csv('dataset/deliveries.csv')
     deliveries.to_sql('deliveries', conn, if_exists='append', index = False)
-
-      
+    
     return render_template('index.html')
 
 @app.route('/about/')
@@ -62,7 +61,6 @@ def matchlist():
         message = "Match list is empty"
     
     return render_template('match-list.html',matchlist=matchlist,message=message)
-
 
 @app.route("/view-match-data/<int:id>")
 def viewmatchdata(id):
